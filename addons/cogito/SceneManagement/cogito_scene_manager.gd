@@ -221,7 +221,7 @@ func save_player_state(player, slot:String):
 		
 	_player_state.player_failed_quests.clear()
 	for quest in CogitoQuestManager.failed.quests:
-		_player_state.player_completed_quests.append(quest)
+		_player_state.player_failed_quests.append(quest)
 	
 	_player_state.clear_saved_wieldable_charges()
 	for item_slot in player.inventory_data.inventory_slots:
