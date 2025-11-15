@@ -42,6 +42,8 @@ enum CogitoSceneLoadMode {TEMP, LOAD_SAVE, RESET}
 @onready var default_fade_duration : float = CogitoGlobals.default_transition_duration
 @export var fade_panel : Panel = null
 
+
+
 var is_currently_loading : bool = false
 
 
@@ -123,6 +125,8 @@ func load_player_state(player, passed_slot:String):
 		player.inventory_data.assigned_quickslots = _player_state.player_quickslots
 		
 		# Loading quests from player state:
+		print (CogitoQuestManager)
+		print ("OK")
 		CogitoQuestManager.active.clear_group()
 		for quest in _player_state.player_active_quests:
 			CogitoQuestManager.active.add_quest(quest)
@@ -134,7 +138,6 @@ func load_player_state(player, passed_slot:String):
 		CogitoQuestManager.failed.clear_group()
 		for quest in _player_state.player_failed_quests:
 			CogitoQuestManager.failed.add_quest(quest)
-		
 		
 		# Loading saved charges of wieldables
 		var array_of_wieldable_charges = _player_state.saved_wieldable_charges
@@ -219,7 +222,6 @@ func save_player_state(player, slot:String):
 	_player_state.player_failed_quests.clear()
 	for quest in CogitoQuestManager.failed.quests:
 		_player_state.player_completed_quests.append(quest)
-	
 	
 	_player_state.clear_saved_wieldable_charges()
 	for item_slot in player.inventory_data.inventory_slots:
