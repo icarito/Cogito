@@ -53,6 +53,37 @@ folder_colors={
 "res://addons/cogito/Scripts/": "gray"
 }
 
+[godot_uid]
+
+uid://c33l80dv3c6c5={
+"id": "c33l80dv3c6c5",
+"path": "res://addons/cogito/QuestSystem/cogito_quest_manager.gd"
+}
+uid://cholww48njaeh={
+"id": "cholww48njaeh",
+"path": "res://addons/input_helper/input_helper.gd"
+}
+uid://cujwm7u5pvogl={
+"id": "cujwm7u5pvogl",
+"path": "res://addons/quick_audio/quick_audio.gd"
+}
+uid://d0q71mnw6am11={
+"id": "d0q71mnw6am11",
+"path": "res://addons/cogito/Scripts/cogito_globals.gd"
+}
+uid://dru131jwwih1y={
+"id": "dru131jwwih1y",
+"path": "res://addons/cogito/EasyMenus/Scripts/menu_template_manager.gd"
+}
+uid://dwd61hyssfy55={
+"id": "dwd61hyssfy55",
+"path": "res://addons/cogito/SceneManagement/cogito_scene_manager.gd"
+}
+uid://by44nnjeu6u4n={
+"id": "by44nnjeu6u4n",
+"path": "res://addons/cogito/Theme/cogito_theme.tres"
+}
+
 [gui]
 
 theme/default_font_multichannel_signed_distance_field=true
